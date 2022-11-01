@@ -1,0 +1,870 @@
+\documentclass[11pt]{article}
+\usepackage[doi=false,isbn=false,maxcitenames=10,maxbibnames=10,abbreviate=false,style=alphabetic]{biblatex}
+\addbibresource{cv.bib}
+%\usepackage{ulem}
+\usepackage[T1]{fontenc}
+\usepackage{enumitem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true, %set true if you want colored links
+  linkcolor=blue,
+  filecolor=blue,  
+  linktoc=all,     %set to all if you want both sections and subsections linked
+  linktocpage=true,
+}
+
+%\setitemize{noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt}
+\usepackage[margin=0.8in]{geometry}
+
+
+\newcommand{\due}{11/4/2022}
+\newcommand{\fy}{2022}
+\newcommand{\fyperiod}{July 1, 2021 -- June 30, 2022}
+\newcommand{\myname}{ThanhVu Huy Nguyen}
+\newcommand{\mygrant}[1]{\item~\label{#1} \fullcite{\detokenize{#1}}}
+\newcommand{\mypubcc}[1]{\item~\label{#1} \fullcite{\detokenize{#1}c}}
+\newcommand{\mypubc}[2]{\item~\label{#1} \fullcite{#1c}\coe{, contribution #2}}   %label,contribution percentage (optional)
+
+\begin{document}
+\thispagestyle{empty}
+
+\begin{center}
+  \textbf{\Large {\myname}: CS-CEC Annual Activity Report}
+\end{center}
+
+\paragraph{Instructions} The following Annual Activity Report is to be filled out and given to
+the Department Chair by \due{}. This report will serve as the
+basis for your annual faculty review and should include all of your
+activities during the past fiscal year. If no form is submitted, then
+your annual review will be based only on what the chair knows about you
+and will lead to an unfavorable review.
+
+The instructions on filling out the activity report are self-explanatory
+and completing the report should require a minimum amount of time to
+complete, particularly if you maintain an up-to-date CV, which I
+strongly recommend that you do. The purpose of this activity report is
+to provide yourself with your own personal evaluation of your annual
+accomplishments, and to provide the Chair with a consistent and easy to
+read document upon which to perform an annual review. In this report,
+you will be able to ensure that it is complete and contains everything
+important for a fair and accurate annual review.
+
+For all information (except courses taught), you are to report only that
+activity that falls within the prior fiscal year, which is from July 1,
+2021 to June 30, 2022. For example, for your \textbf{Published Refereed
+Journal Papers} (\textbf{appeared or accepted in FY \fy{}}), this
+category should only include those papers that appeared or were accepted
+over this time period. As stated in the instructions, list publications
+in IEEE standard format, grouped according to the categories that are
+defined, and indicate the names of student authors for whom you are the
+advisor in \textbf{bold} letters. If known, also list the \textbf{impact
+factor} of journals and conference proceedings.
+
+The report also includes three optional questions regarding the impact
+of the Covid-19 crisis on your activities this year. In addition to
+that, please do not forget your personal statement that is described on
+the last page.
+
+Finally, when you submit the report, please add your email id at the
+beginning of the file name so that your chair can easily differenate the
+numerous faculty submissions.
+
+\newpage
+\begin{center}
+  \textbf{ANNUAL ACTIVITY REPORT\\
+    Fiscal Year \fy{}\\
+    \fyperiod}
+\end{center}
+
+\textbf{Name:} \myname{}
+
+\section{TEACHING}
+
+%\begin{table}[h]
+%  \centering
+\subsection{Base Teaching Load FY \fy{} (mark $\checkmark$ one)}
+\begin{tabular}{ccccc}
+    \toprule
+    \textbf{Term (4+4)}& \textbf{Tenured (2+2)}& \textbf{TT Year 1-2 (1+1)}& \textbf{TT Year 3-6 (1+2)}&\textbf{Other}\\
+      \midrule
+      & & & & \\
+      \bottomrule
+  \end{tabular}
+
+\subsection{Course Reductions (insert corresponding number with brief explanation}
+% \begin{table}[h]
+%   \centering
+%   \caption{Course Reductions (insert corresponding number with brief explanation)\label{tab:course-reductions}}
+\begin{center}
+  \begin{tabular}{ccccc}
+    \toprule
+    \textbf{Buyout}&\textbf{Release for Research}&\textbf{Service}&\textbf{Study Leave}&\textbf{Other}\\
+    \midrule
+    & & & & \\
+    \bottomrule
+  \end{tabular}
+\end{center}
+
+
+\subsection{Courses Taught}
+\emph{Note:} that since the evaluation metrics changed in Spring 2022, the report format changes
+  % \begin{minipage}{\textwidth}
+  % \footnotesize
+  % \caption{\label{tab:course-taught}}
+\begin{center}
+  \footnotesize
+  \begin{tabular}{ccccccccc}
+    \toprule
+    \textbf{Year}&\textbf{Term}&\textbf{Course/}&\textbf{Course}&\textbf{No. of}&\textbf{No. of}&\textbf{Overall}&\textbf{Overall}&\textbf{Notes}\footnote{Indicate a course that you have newly developed by (ND), a course that you have taught for the first time by (F), or a course where you have made substantial changes by (C).  Please provide relevant comments below}\\
+    &&\textbf{No./Section}&\textbf{Title}&\textbf{Students}&\textbf{Response}s& \textbf{Teacher Rating}& \textbf{Class Rating}&\\
+    \midrule
+    2021& Summer & & & & & & &\\
+    \midrule
+    2022& Fall & & & & & & &\\
+    \bottomrule
+    2022& Spring & & & & & & &\\
+    \bottomrule
+  \end{tabular}
+\end{center}
+%   \end{minipage}
+% \end{table}
+
+
+% 
+
+% \begin{longtable}[]{@{}
+% \toprule()
+% \begin{minipage}[b]{\linewidth}\raggedright
+% \textbf{Year}
+% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+% \textbf{Term}
+% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+% \textbf{Course} \textbf{Number/Section}
+% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+% \textbf{Course} \textbf{Title}
+% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+% \textbf{No}. \textbf{of} \textbf{Students}
+% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+% \textbf{No. of Responses}
+% \end{minipage} &
+% \multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 20\tabcolsep) * \real{0.1342} + 2\tabcolsep}}{%
+% \begin{minipage}[b]{\linewidth}\raggedright
+% \textbf{Overall Teacher Rating}
+% \end{minipage}} &
+% \multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 20\tabcolsep) * \real{0.1235} + 2\tabcolsep}}{%
+% \begin{minipage}[b]{\linewidth}\raggedright
+% \textbf{Overall Class Rating}
+% \end{minipage}} & \begin{minipage}[b]{\linewidth}\raggedright
+% \textbf{Notes*}
+% \end{minipage} \\
+% \midrule()
+% \endhead
+% \multirow{2}{*}{2021} & \multirow{2}{*}{Summer} & & & & &
+% \multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 20\tabcolsep) * \real{0.1342} + 2\tabcolsep}}{%
+% } &
+% \multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 20\tabcolsep) * \real{0.1235} + 2\tabcolsep}}{%
+% } & \\
+% & & & & & &
+% \multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 20\tabcolsep) * \real{0.1342} + 2\tabcolsep}}{%
+% } &
+% \multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 20\tabcolsep) * \real{0.1235} + 2\tabcolsep}}{%
+% } & \\
+% \multirow{4}{*}{2022} & \multirow{4}{*}{Fall} & SWE619 & OO Software
+% Specification and Construction & & &
+% \multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 20\tabcolsep) * \real{0.1342} + 2\tabcolsep}}{%
+% } &
+% \multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 20\tabcolsep) * \real{0.1235} + 2\tabcolsep}}{%
+% } & F \\
+% & & & & & &
+% \multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 20\tabcolsep) * \real{0.1342} + 2\tabcolsep}}{%
+% } &
+% \multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 20\tabcolsep) * \real{0.1235} + 2\tabcolsep}}{%
+% } & \\
+% & & & & & &
+% \multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 20\tabcolsep) * \real{0.1342} + 2\tabcolsep}}{%
+% } &
+% \multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 20\tabcolsep) * \real{0.1235} + 2\tabcolsep}}{%
+% } & \\
+% & & & & & &
+% \multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 20\tabcolsep) * \real{0.1342} + 2\tabcolsep}}{%
+% } &
+% \multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 20\tabcolsep) * \real{0.1235} + 2\tabcolsep}}{%
+% } & \\
+% \multicolumn{11}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 20\tabcolsep) * \real{1.0000} + 20\tabcolsep}@{}}{%
+% For Sp 22, please report the average of the mean ratings of the
+% following metrics: Student Participation (Q7-Q8) Learning Outcomes
+% (Q9-Q12),Course Environment/Experience (Q13-Q17), Instructor Prepartion
+% (Q18-Q20)} \\
+% \multirow{5}{*}{2022} & \multirow{5}{*}{Spring} & \textbf{Course}
+% \textbf{Number/Section} & \textbf{Course} \textbf{Title} & \textbf{No}.
+% \textbf{of} \textbf{Students} & \textbf{No. of Responses} & Avg. Q7-Q8 &
+% Avg. Q9-Q12 & Avg. Q13-Q17 & Avg. Q18-Q20 & \textbf{Notes*} \\
+% & & SWE619 & OO Software Specification and Construction & & & & & & & \\
+% & & & & & & & & & & \\
+% & & & & & & & & & & \\
+% & & & & & & & & & & \\
+% \bottomrule()
+% \end{longtable}
+
+\subsection{Student Supervision}
+\emph{Note}: This section includes supervision of BS and MS students.  Supervision of PhD students and post-doctoral fellows and research faculty will be entered under Research and Scholarship.   Please include student advising under Service.
+
+\subsubsection{B.S. OSCAR Student Mentor}
+\begin{center}
+\begin{tabular}{ccc}
+  \toprule
+  \textbf{Firstname}&\textbf{Lastname}&\textbf{Project Title, Dates, Your Role}\\
+  \midrule
+                      & & \\
+  \bottomrule
+\end{tabular}
+\end{center}
+
+\subsubsection{Other Undergraduate Research Mentoring}
+\begin{center}
+\begin{tabular}{ccc}
+  \toprule
+  \textbf{Firstname}&\textbf{Lastname}&\textbf{Project Title, Dates, Your Role}\\
+    \midrule
+                    & & \\
+  \bottomrule
+\end{tabular}
+\end{center}
+
+
+\subsubsection{M.S. Student Advisor}
+\begin{center}
+  \begin{tabular}{ccc}
+    \toprule
+    \textbf{Firstname}&\textbf{Lastname}&\textbf{Your Role, Support Provided}\\
+    \midrule
+                      & & \\
+    \bottomrule
+  \end{tabular}
+\end{center}
+
+
+
+\subsubsection{M.S. Student Advisor}
+\begin{center}
+  \begin{tabular}{ccc}
+    \toprule
+    \textbf{Firstname}&\textbf{Lastname}&\textbf{Your Role, Supported Provided}\\
+    \midrule
+    & & \\
+    \bottomrule
+  \end{tabular}
+\end{center}
+
+\newpage
+
+\section{RESEARCH AND SCHOLARSHIP}
+
+\subsection{Publications and Creative Works}
+
+\paragraph{Note} List publications in IEEE standard format, grouped according to the categories defined below. Indicate the names of student authors for whom
+you are the advisor in \textbf{bold} letters. If known, indicate the
+\textbf{impact factor} of journals and acceptance rate of conference
+proceedings. Add/delete rows as necessary.
+
+
+\begin{center}
+  \begin{tabular}{cc}
+    \toprule
+    &\textbf{Books (appeared in FY \fy{})}\\
+    \midrule
+    1& \\
+    2& \\
+    \toprule
+    &\textbf{Book Chapters (appeared in FY \fy{})}\\
+    \midrule
+    1& \\
+    2& \\
+    \toprule
+    &\textbf{Published Refereed Journal Papers (appeared or accepted in FY \fy{})}\\
+    \midrule
+    1& \\
+    2& \\
+    \toprule
+    &\textbf{Submitted Refereed Journal Papers (in FY \fy{})}\\
+    \midrule
+    1& \\
+    2& \\
+    \toprule
+    &\textbf{Refereed Conference Papers (appeared or accepted in FY \fy{})}\\
+    \midrule
+    1& \\
+    2& \\
+    \toprule
+    &\textbf{Submitted Refereed Conference Papers}\\
+    \midrule
+    1& \\
+    2& \\
+    \toprule
+    &\textbf{Non-Refereed Publications}\\
+    \midrule
+    1& \\
+    2& \\
+    \toprule
+    &\textbf{Issued Patents}\\
+    \midrule
+    1& \\
+    2& \\
+    \toprule
+    &\textbf{Invited Presentation and Keynote Speeches}\\
+    \midrule
+    1& \\
+    2& \\    
+    \bottomrule
+  \end{tabular}
+\end{center}
+
+\subsection{Funded Research}
+
+
+\begin{center}
+  \begin{tabular}{cc}
+    \toprule
+    &\textbf{Newly Awarded Research Grants (FY \fy{})}\\
+    \midrule
+    1& \\
+    2& \\
+    \toprule
+    &\textbf{Other Active Research Grants (FY \fy{})}\\
+    \midrule
+    1& \\
+    2& \\
+    &\textbf{Submitted Research Proposals (FY \fy{})}\\
+    \midrule
+    1& \\
+    2& \\
+    \bottomrule
+  \end{tabular}
+\end{center}
+
+\subsection{PhD Students, Postdocs and Research Faculty}
+
+\subsubsection{PhD Student Advisor (Students who graduated FY \fy{})}
+
+% Advisor, Co-Advisor (if co-advisor, please name the co-advisor).
+% Please note if the student was supported by your external research
+% funding and the number of any such credits
+
+\subsubsection{PhD Student Advisor (Continuing FY \fy{} Students)}
+\paragraph{Note} Put \textbf{names in Bold} if Full Time
+
+% \begin{longtable}[]{@{}
+% \toprule()
+% \multicolumn{2}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{1.0000} + 2\tabcolsep}@{}}{%
+% \begin{minipage}[b]{\linewidth}\raggedright
+% \textbf{Books} (\textbf{appeared in FY 2022})
+% \end{minipage}} \\
+% \midrule()
+% \endhead
+% ~1 & ~ \\
+% ~2 & ~~ \\
+% \multicolumn{2}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{1.0000} + 2\tabcolsep}@{}}{%
+% \textbf{Book Chapters} (\textbf{appeared in FY 2022})~} \\
+% ~1 & ~ \\
+% ~2 & ~~ \\
+% \multicolumn{2}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{1.0000} + 2\tabcolsep}@{}}{%
+% \textbf{Published Refereed Journal Papers} (\textbf{appeared or accepted
+% in FY 2022})} \\
+% ~1 & ~Thanhvu Nguyen, K\textbf{imHao Nguyen}, and Matthew Dwyer. ``Using
+% Symbolic States to Infer Numerical Invariants''. In: Transactions on
+% Software Engineering (TSE) (2021). PDF. Impact factor 4.78 \\
+% ~2 & ~~ \\
+% ~3 & ~~ \\
+% \multicolumn{2}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{1.0000} + 2\tabcolsep}@{}}{%
+% \textbf{Submitted Refereed Journal Papers} (\textbf{in FY 2022})} \\
+% ~1 & ~ \\
+% ~2 & ~~ \\
+% ~3 & ~ \\
+% ~4 & ~~ \\
+% \multicolumn{2}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{1.0000} + 2\tabcolsep}@{}}{%
+% \textbf{Refereed Conference Papers} (\textbf{appeared or accepted in FY
+% 2022)}} \\
+% ~1 & ~Simón Gutierrez Brida, Germán Regis, \textbf{Guolong Zheng,} Hamid
+% Bagheri, ThanhVu Nguyen, Nazareno Aguirre, and Marcelo Frias. ``ICEBAR:
+% Feedback-Driven Iterative Repair of Alloy Specifications''. In:
+% Automated Software Engineering (ASE). IEEE, 2022 \\
+% ~2 & ~~\textbf{Guolong Zheng}, ThanhVu Nguyen, Simón Gutiérrez Brida,
+% Germán Regis, Marcelo Frias, Nazareno Aguirre, and Hamid Bagheri. ``ATR:
+% Template-based Repair for Alloy Specifications''. In: Interna- tional
+% Symposium on Software Testing and Analysis (ISSTA). ACM, 2022, pages
+% 666-- 677. \\
+% ~3 & ~\textbf{KimHao Nguyen}, ThanhVu Nguyen, and Quoc-Sang Phan.
+% ``Analyzing the CMake Build System''. In: 2022 IEEE/ACM 44th
+% International Conference on Software Engineering: Software Engineering
+% in Practice (ICSE-SEIP). IEEE, 2022, pages 27--28. \\
+% 4 & ~Thanh-Dat Nguyen, Thanh Le-Cong, ThanhVu H Nguyen, Xuan-Bach D Le,
+% and Quyet-Thang Huynh. ``Toward the Analysis of Graph Neural Networks''.
+% In: 2022 IEEE/ACM 44rd International Conference on Software
+% Engineering-New Ideas and Emerging Results (ICSE-NIER). IEEE, 2022. \\
+% 5 & \textbf{Didier Ishimwe}, \textbf{KimHao Nguyen}, and ThanhVu Nguyen.
+% ``Dynaplex: Inferring Asymptotic Runtime Complexity of Recursive
+% Programs''. In: 2022 IEEE/ACM 44th International Conference on Software
+% Engineering: Companion Proceedings (ICSE-Companion). IEEE, 2022, pages
+% 61-- 64. \\
+% 6 & ThanhVu Nguyen, \textbf{KimHao Nguyen}, and \textbf{Hai Duong}.
+% ``SymInfer: Inferring Numerical Invariants using Symbolic States''. In:
+% 2022 IEEE/ACM 44th International Conference on Software Engineering:
+% Companion Proceedings (ICSE-Companion). IEEE, 2022, pages 197--201. \\
+% 7 & \textbf{KimHao Nguyen} and ThanhVu Nguyen. ``GenTree: Inferring
+% Configuration Interactions using Decision Trees''. In: Automated
+% Software Engineering-Tool Demo. IEEE, 2021, pages 1232-- 1236. \\
+% 8 & \textbf{Guolong Zheng}, ThanhVu Nguyen, Simón Gutiérrez Brida,
+% Germán Regis, Marcelo F Frias, Nazareno Aguirre, and Hamid Bagheri.
+% ``FLACK: Localizing Faults in Alloy Models''. In: Automated Software
+% Engineering-Tool Demo. IEEE, 2021, pages 1218--1222. \\
+% 9 & Simón Gutierrez Brida, Germán Regis, \textbf{Guolong Zheng}, Hamid
+% Bagheri, ThanhVu Nguyen, Nazareno Aguirre, and Marcelo Frias. ``BeAFix:
+% An Automated Repair Tool for Faulty Alloy Models''. In: Automated
+% Software Engineering-Tool Demo. IEEE, 2021, pages 1213--1217. \\
+% \multicolumn{2}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{1.0000} + 2\tabcolsep}@{}}{%
+% \textbf{Submitted Refereed Conference Papers}} \\
+% ~1 & ~ \\
+% ~2 & ~~ \\
+% ~3 & ~ \\
+% ~4 & ~~ \\
+% \multicolumn{2}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{1.0000} + 2\tabcolsep}@{}}{%
+% \textbf{Non-Refereed Publications}} \\
+% ~1 & ~ \\
+% ~2 & ~~ \\
+% ~3 & ~~ \\
+% \multicolumn{2}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{1.0000} + 2\tabcolsep}@{}}{%
+% \textbf{Issued Patents}} \\
+% ~1 & ~ \\
+% ~2 & ~~ \\
+% \multicolumn{2}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{1.0000} + 2\tabcolsep}@{}}{%
+% \textbf{Invited Presentations and Keynote Speeches}} \\
+% ~1 & ~ \\
+% ~2 & ~~ \\
+% ~3 & ~~ \\
+% \bottomrule()
+% \end{longtable}
+
+% \textbf{FUNDED RESEARCH}
+
+% \textbf{\uline{Newly Awarded Research Grants (FY 2022)}}
+
+% \begin{longtable}[]{@{}
+% \toprule()
+% \multirow{5}{*}{\begin{minipage}[b]{\linewidth}\raggedright
+% 1
+% \end{minipage}} & \begin{minipage}[b]{\linewidth}\raggedright
+% Name of PIs, Co-PIs in order submitted
+% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+% Nguyen (GMU), Antonopoulos (Yale) Koskinen, Le (Stevens)
+% \end{minipage} \\
+% & \begin{minipage}[b]{\linewidth}\raggedright
+% Title
+% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+% Collaborative: Medium: Ensuring Safety and Liveness of Modern Systems
+% through Dynamic Temporal Analysis
+% \end{minipage} \\
+% & \begin{minipage}[b]{\linewidth}\raggedright
+% Sponsor
+% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+% NSF
+% \end{minipage} \\
+% & \begin{minipage}[b]{\linewidth}\raggedright
+% Dates
+% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+% 7/15/2021--7/14/2024
+% \end{minipage} \\
+% & \begin{minipage}[b]{\linewidth}\raggedright
+% \$ award and your share
+% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+% 1.2M (400K my share)
+% \end{minipage} \\
+% \midrule()
+% \endhead
+% \multirow{5}{*}{2} & Name of PIs, Co-PIs in order submitted & \\
+% & Title & \\
+% & Sponsor & \\
+% & Dates & \\
+% & \$ award and your share & \\
+% \multicolumn{2}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.2789} + 2\tabcolsep}}{%
+% Total \$ awards, your share, and FY 2021 expenditures} & \\
+% \bottomrule()
+% \end{longtable}
+
+% \textbf{\uline{Other Active Research Grants (FY 2021)}}
+
+% \begin{longtable}[]{@{}
+% \toprule()
+% \multirow{5}{*}{\begin{minipage}[b]{\linewidth}\raggedright
+% 1
+% \end{minipage}} & \begin{minipage}[b]{\linewidth}\raggedright
+% Name of PIs, Co-PIs in order submitted
+% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+% \end{minipage} \\
+% & \begin{minipage}[b]{\linewidth}\raggedright
+% Title
+% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+% \end{minipage} \\
+% & \begin{minipage}[b]{\linewidth}\raggedright
+% Sponsor
+% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+% \end{minipage} \\
+% & \begin{minipage}[b]{\linewidth}\raggedright
+% Dates
+% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+% \end{minipage} \\
+% & \begin{minipage}[b]{\linewidth}\raggedright
+% \$ award and your share
+% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+% \end{minipage} \\
+% \midrule()
+% \endhead
+% \multirow{5}{*}{2} & Name of PIs, Co-PIs in order submitted & \\
+% & Title & \\
+% & Sponsor & \\
+% & Dates & \\
+% & \$ award and your share & \\
+% \multicolumn{2}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.2889} + 2\tabcolsep}}{%
+% Total \$ awards, your share, and FY 2021 expenditures} & \\
+% \bottomrule()
+% \end{longtable}
+
+% \textbf{\uline{Submitted Research Proposals (FY 2022)}}
+
+% \begin{longtable}[]{@{}
+% \toprule()
+% \multirow{6}{*}{\begin{minipage}[b]{\linewidth}\raggedright
+% 1
+% \end{minipage}} & \begin{minipage}[b]{\linewidth}\raggedright
+% Name of PIs, Co-PIs in order submitted
+% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+% \end{minipage} \\
+% & \begin{minipage}[b]{\linewidth}\raggedright
+% Title
+% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+% \end{minipage} \\
+% & \begin{minipage}[b]{\linewidth}\raggedright
+% Sponsor
+% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+% \end{minipage} \\
+% & \begin{minipage}[b]{\linewidth}\raggedright
+% Dates
+% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+% \end{minipage} \\
+% & \begin{minipage}[b]{\linewidth}\raggedright
+% \$ award and your share
+% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+% \end{minipage} \\
+% & \begin{minipage}[b]{\linewidth}\raggedright
+% Proposal Status
+% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+% \end{minipage} \\
+% \midrule()
+% \endhead
+% \multirow{6}{*}{2} & Name of PIs, Co-PIs in order submitted & \\
+% & Title & \\
+% & Sponsor & \\
+% & Dates & \\
+% & \$ award and your share & \\
+% & Proposal Status & \\
+% \multicolumn{2}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.2889} + 2\tabcolsep}}{%
+% Total \$ awards \& your share} & \\
+% \bottomrule()
+% \end{longtable}
+
+
+% }}}
+
+% \begin{longtable}[]{@{}
+% \toprule()
+% \begin{minipage}[b]{\linewidth}\raggedright
+% First Name
+% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+% Last Name
+% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+% PhD
+
+% Degree
+% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+% Dissertation Title
+% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+% Semester of Graduation
+% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+% Your Role*
+% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+% Employer
+% \end{minipage} \\
+% \midrule()
+% \endhead
+% ~ & ~ & ~ & & ~ & & \\
+% ~ & ~ & ~ & ~ & ~ & ~ & ~ \\
+% ~ & ~ & ~ & ~ & ~ & ~ & ~ \\
+% \bottomrule()
+% \end{longtable}
+
+% * Advisor, Co-Advisor (if co-advisor, please name the co-advisor).
+% Please note if the student was supported by your external research
+% funding and the number of any such credits
+
+% \textbf{\uline{Ph.D. Student Advisor \emph{(Continuing FY 2022
+% Students)}}} \emph{--} Put \textbf{names in Bold} if Full Time
+
+% \begin{longtable}[]{@{}
+% \toprule()
+% \begin{minipage}[b]{\linewidth}\raggedright
+% First Name
+% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+% Last Name
+% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+% PhD
+
+% Degree
+% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+% Dissertation Title
+% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+% Years in\\
+% Program\strut
+% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+% Anticipated\\
+% Graduation Date\strut
+% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+% Your Role*
+% \end{minipage} \\
+% \midrule()
+% \endhead
+% ~ & ~ & ~ & ~ & ~ & ~ & \\
+% ~ & ~ & ~ & ~ & ~ & ~ & \\
+% ~ & ~ & ~ & ~ & ~ & ~ & \\
+% ~ & ~ & ~ & ~ & ~ & ~ & ~ \\
+% \bottomrule()
+% \end{longtable}
+
+% * Advisor, Co-Advisor. Please note if the student was supported by your
+% external research funding and the number of any such credits
+
+% \textbf{\uline{Total No. of credits of 998/999 credits you have
+% supervised in FY 2022}: \uline{­­­­­} \_\_\_}
+
+% \textbf{\uline{Research Faculty and Post Docs Fellows you have funded
+% and/or supervised}}
+
+% \begin{longtable}[]{@{}
+% \toprule()
+% \begin{minipage}[b]{\linewidth}\raggedright
+% First Name
+% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+% Last Name
+% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+% Position
+% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+% Focus of Research
+% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+% Period
+% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+% Funding Source
+% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+% Your Role*
+% \end{minipage} \\
+% \midrule()
+% \endhead
+% ~ & ~ & ~ & ~ & ~ & ~ & ~ \\
+% ~ & ~ & ~ & ~ & ~ & ~ & ~ \\
+% ~ & ~ & ~ & ~ & ~ & ~ & ~ \\
+% ~ & ~ & ~ & ~ & ~ & ~ & ~ \\
+% \bottomrule()
+% \end{longtable}
+
+% *Indicate also the level of support you have provided from external
+% research funds
+\newpage
+\section{SERVICE and HONORS/AWARDS (FY 2022)}
+
+\subsection{Internal Service}
+
+%\begin{table}[h]
+%  \centering
+%  \caption{Internal Service\label{tab:internal-service}}
+  \begin{tabular}{ll}
+    \toprule
+    \textbf{}& \textbf{Service to the Department}\\
+      \midrule
+    1& \\
+    2& \\
+    3& \\
+    \toprule
+    \textbf{}& \textbf{PhD/MS Student Committee (Non-Advisor). Include Student name, program, and stage}\\
+      \midrule
+    1& \\
+    2& \\
+    3& \\
+    \toprule
+    \textbf{}& \textbf{Service to the University}\\
+      \midrule
+    1& \\
+    2& \\
+    3& \\
+    \bottomrule
+  \end{tabular}
+%\end{table}
+
+
+% \begin{longtable}[]{@{}
+% \toprule()
+% \multicolumn{2}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{1.0000} + 2\tabcolsep}@{}}{%
+% \begin{minipage}[b]{\linewidth}\raggedright
+% \textbf{Service to the Department}
+% \end{minipage}} \\
+% \midrule()
+% \endhead
+% ~1 & ~ \\
+% ~2 & \\
+% ~3 & ~ \\
+% ~4 & ~~ \\
+% \multicolumn{2}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{1.0000} + 2\tabcolsep}@{}}{%
+% \textbf{PhD/MS Student Committee (Non-Advisor). Include Student name,
+% program, and stage}} \\
+% ~1 & ~ \\
+% ~2 & ~~ \\
+% ~3 & ~~ \\
+% \multicolumn{2}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{1.0000} + 2\tabcolsep}@{}}{%
+% \textbf{Service to the College or the University}} \\
+% ~1 & ~ \\
+% ~2 & ~~ \\
+% ~3 & ~ \\
+% 4 & \\
+% \bottomrule()
+% \end{longtable}
+
+\subsection{External Service}
+% \begin{table}[h]
+%   \centering
+%   \caption{External Service\label{tab:external-services}}
+  \begin{tabular}{ll}
+    \toprule
+    \textbf{}& \textbf{Service to the Profession (Editorial/Reviewer/Conference committees etc.)}\\
+      \midrule
+    1& \\
+    2& \\
+    3& \\
+    \toprule
+    \textbf{}& \textbf{Other Service}\\
+      \midrule
+    1& \\
+    2& \\
+    3& \\
+    \bottomrule
+  \end{tabular}
+%\end{table}
+
+% \begin{longtable}[]{@{}
+%   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.0633}}
+%   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.9367}}@{}}
+% \toprule()
+% \multicolumn{2}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{1.0000} + 2\tabcolsep}@{}}{%
+% \begin{minipage}[b]{\linewidth}\raggedright
+% \textbf{Service to the Profession (Editorial/Reviewer/Conference
+% committees etc.)}
+% \end{minipage}} \\
+% \midrule()
+% \endhead
+% ~1 & ~ \\
+% ~2 & ~~ \\
+% ~3 & ~ \\
+% ~4 & ~~ \\
+% 5 & \\
+% 6 & \\
+% \multicolumn{2}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{1.0000} + 2\tabcolsep}@{}}{%
+% \textbf{Other Service}} \\
+% ~1 & ~ \\
+% ~2 & ~~ \\
+% \bottomrule()
+% \end{longtable}
+
+\subsection{Honors and Awards (including student awards)}
+\begin{table}[h]
+  \centering
+  \caption{\textbf{Honors and Awards (including student awards)}\label{tab:honors-and-awards}}
+  \begin{tabular}{ll}
+    \toprule
+    1& -\\
+    2& -\\
+    3& -\\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+
+\subsection{Other Activities (Consulting, Professional Course Development or Delivery) or Other}
+\begin{table}[h]
+  \centering
+  \caption{Other Activities (Consulting, Professional Course Development or Delivery) or Other\label{tab:other-activities}}
+  \begin{tabular}{ll}
+    \toprule
+    1& -\\
+    2& -\\
+    3& -\\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+% \begin{longtable}[]{@{}
+%   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.0633}}
+%   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.9367}}@{}}
+% \toprule()
+% \begin{minipage}[b]{\linewidth}\raggedright
+% ~1
+% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+% ~
+% \end{minipage} \\
+% \midrule()
+% \endhead
+% ~2 & ~~ \\
+% ~3 & ~ \\
+% \bottomrule()
+% \end{longtable}
+
+\newpage
+\subsection{IMPACT of COVID-19 in FY 2022.}\label{sec:covid}
+
+\begin{enumerate}
+\item
+  \textbf{If you wish, please comment on the effects (or
+  challenges) of the Covid-19 crisis on your performance, including in
+  research, and scholarship, teaching, and service in FY 22}
+\item
+  \textbf{Please describe any new endeavors you have undertaken
+  in response to the Covid-19 crisis.}
+\item
+  \textbf{Other Comments you wish to make}
+\end{enumerate}
+
+% \textbf{\hfill\break
+% }
+
+\newpage
+\section{PERSONAL STATEMENT}
+
+In this section, please address the items below. If relevant, feel free
+to either repeat or make reference to your pertinent responses to Q1,
+Q2, and/or Q3 in Section~\ref{sec:covid} above.
+
+\begin{enumerate}
+\item
+  A statement of what you feel were your \textbf{major accomplishments}
+  in the \fy{} fiscal year.
+\item
+  A personal reflection on how well you accomplished your stated goals
+  that you submitted last year for the \fy{} fiscal year, and
+\item
+  A personal statement of your objectives for the coming year. Be as
+  specific as you can and avoid putting down general statements such as
+  ``To get more funding and to write more papers.''
+\end{enumerate}
+
+You may also use this part of your Annual Report to make any additional
+comments or suggestions that you feel are important.
+
+
+\end{document}

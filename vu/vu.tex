@@ -1,7 +1,16 @@
 \documentclass[11pt]{article}
 \usepackage[doi=false,isbn=false,maxcitenames=10,maxbibnames=10,abbreviate=false,style=alphabetic]{biblatex}
-\addbibresource{cv.bib}
-%\usepackage{ulem}
+\addbibresource{~/git/www/latex-cv/cv.bib}
+% \usepackage{ulem}
+
+\newtoggle{usecoe}
+\settoggle{usecoe}{false}
+\newcommand{\coe}[1]{\iftoggle{usecoe}{#1}{}}
+\newcommand{\notcoe}[1]{\nottoggle{usecoe}{#1}{}}
+\newcommand{\coeite}[2]{\iftoggle{usecoe}{#1}{#2}}
+
+
+  
 \usepackage[T1]{fontenc}
 \usepackage{enumitem}
 \usepackage{amsmath}
@@ -81,14 +90,14 @@ numerous faculty submissions.
 \textbf{Name:} \myname{}
 
 \section{TEACHING}
-
 \subsection{Base Teaching Load FY \fy{} (mark $\checkmark$ one)}
+
 \begin{center}
 \begin{tabular}{ccccc}
     \toprule
     \textbf{Term (4+4)}& \textbf{Tenured (2+2)}& \textbf{TT Year 1-2 (1+1)}& \textbf{TT Year 3-6 (1+2)}&\textbf{Other}\\
       \midrule
-      & & & & \\
+                       & & $\checkmark$ && \\
       \bottomrule
   \end{tabular}
 \end{center}
@@ -122,9 +131,11 @@ numerous faculty submissions.
     \midrule
     2021& Summer & & & & & & &\\
     \midrule
-    2022& Fall & & & & & & &\\
+    2022& Fall & SWE619 & OO Software Specification & & & & &\\
+    &&&and Construction &&&&\\
     \bottomrule
-    2022& Spring & & & & & & &\\
+    2022& Spring & SWE619 & OO Software Specification & & & & &\\
+    &&&and Construction &&&&\\
     \bottomrule
   \end{tabular}
 \end{minipage}
@@ -212,11 +223,11 @@ numerous faculty submissions.
 
 \subsubsection{B.S. OSCAR Student Mentor}
 \begin{center}
-\begin{tabular}{cccc}
+\begin{tabular}{ccc}
   \toprule
-  \textbf{Firstname}&\textbf{Lastname}&\textbf{Project Title, Dates}& \textbf{Your Role}\\
+  \textbf{Firstname}&\textbf{Lastname}&\textbf{Project Title, Dates, Your Role}\\
   \midrule
-                      & & &\\
+                      & & \\
   \bottomrule
 \end{tabular}
 \end{center}
@@ -227,7 +238,8 @@ numerous faculty submissions.
   \toprule
   \textbf{Firstname}&\textbf{Lastname}&\textbf{Project Title, Dates}& \textbf{Your Role}\\
     \midrule
-                    & & &\\
+  KimHao& Nguyen& Analyzing the CMake Build System using Symbolic Execution&Mentor\\
+  & & UNL (S'20 -- Current) &\\
   \bottomrule
 \end{tabular}
 \end{center}
@@ -262,76 +274,115 @@ numerous faculty submissions.
 
 \subsection{Publications and Creative Works}
 
+\paragraph{Note}
+\begin{itemize}
+\item \(^1\), \(^2\), \(^3\) denote co-authorship with my undergraduate, M.S., and Ph.D. students, respectively.
+\item \textbf{Bold journal and conference names} indicate full research papers at top-tier venues (e.g., TSE, OOPSLA, ICSE, FSE, PLDI). See \href{https://csrankings.org}{csrankings.org} for top CS conferences.
+\end{itemize}
+  
 \paragraph{Note} List publications in IEEE standard format, grouped according to the categories defined below. Indicate the names of student authors for whom
 you are the advisor in \textbf{bold} letters. If known, indicate the
 \textbf{impact factor} of journals and acceptance rate of conference
 proceedings. Add/delete rows as necessary.
 
+\subsubsection{Books (appeared in FY \fy{})}
+NA
+\subsubsection{Book Chapters (appeared in FY \fy{})}
+NA
+\subsubsection{Published Refereed Journal Papers (appeared or accepted in FY \fy{})}
 
-\begin{center}
-  \begin{tabular}{cc}
-    \toprule
-    &\textbf{Books (appeared in FY \fy{})}\\
-    \midrule
-    1& \\
-    2& \\
-    \toprule
-    &\textbf{Book Chapters (appeared in FY \fy{})}\\
-    \midrule
-    1& \\
-    2& \\
-    \toprule
-    &\textbf{Published Refereed Journal Papers (appeared or accepted in FY \fy{})}\\
-    \midrule
-    1& \\
-    2& \\
-    \toprule
-    &\textbf{Submitted Refereed Journal Papers (in FY \fy{})}\\
-    \midrule
-    1& \\
-    2& \\
-    \toprule
-    &\textbf{Refereed Conference Papers (appeared or accepted in FY \fy{})}\\
-    \midrule
-    1& \\
-    2& \\
-    \toprule
-    &\textbf{Submitted Refereed Conference Papers}\\
-    \midrule
-    1& \\
-    2& \\
-    \toprule
-    &\textbf{Non-Refereed Publications}\\
-    \midrule
-    1& \\
-    2& \\
-    \toprule
-    &\textbf{Issued Patents}\\
-    \midrule
-    1& \\
-    2& \\
-    \toprule
-    &\textbf{Invited Presentation and Keynote Speeches}\\
-    \midrule
-    1& \\
-    2& \\    
-    \bottomrule
-  \end{tabular}
-\end{center}
+\begin{enumerate}
+  \mypubcc{nguyen2021using}
+  
+\end{enumerate}
+\subsubsection{Submitted Refereed Journal Papers (in FY \fy{})}
+NA
+\subsubsection{Refereed Conference Papers (appeared or accepted in FY \fy{})}
+\begin{enumerate}
+  \mypubc{ishimwe2021dynaplex}{}
+  \mypubc{brida2022icebar}{14\%}
+  \mypubc{zheng2022atr}{14\%}
+  \mypubc{nguyen2022analyzing}{33\%}
+    \mypubc{nguyen2022toward}{25\%}        
+    \mypubc{ishimwe2022dynaplex}{33\%}    
+    \mypubc{nguyen2022syminfer}{70\%}
+    \mypubc{nguyen2021tool}{50\%}
+    \mypubc{zheng2021tool}{14\%}
+    \mypubc{brida2021tool}{14\%}    
+\end{enumerate}
+
+\subsubsection{Submitted Refereed Conference Papers}
+NA
+\subsubsection{Non-Refereed Publications}
+NA
+\subsubsection{Issued Patents}
+NA
+\subsubsection{Invited Presentation and Keynote Speeches}
+NA
+
+% \begin{center}
+%   \begin{tabular}{cc}
+%     \toprule
+%     &\textbf{}\\
+%     \midrule
+%     1& \\
+%     2& \\
+%     \toprule
+%     &\textbf{}\\
+%     \midrule
+%     1& \\
+%     2& \\
+%     \toprule
+%     &\textbf{}\\
+%     \midrule
+%     1& \\
+%     2& \\
+%     \toprule
+%     &\textbf{}\\
+%     \midrule
+%     1& \\
+%     2& \\
+%     \toprule
+%     &\textbf{}\\
+%     \midrule
+%     1& \\
+%     2& \\
+%     \toprule
+%     &\textbf{}\\
+%     \midrule
+%     1& \\
+%     2& \\
+%     \toprule
+%     &\textbf{}\\
+%     \midrule
+%     1& \\
+%     2& \\
+%     \toprule
+%     &\textbf{}\\
+%     \midrule
+%     1& \\
+%     2& \\
+%     \toprule
+%     &\textbf{}\\
+%     \midrule
+%     1& \\
+%     2& \\    
+%     \bottomrule
+%   \end{tabular}
+% \end{center}
 
 \subsection{Funded Research}
 \subsubsection{Newly Awarded Research Grants (FY \fy{})}
 \begin{enumerate}
-\item 1
-\item 2
+  \mygrant{nsf2022dtemporal}
+  \mygrant{fb2022cmake}
 \end{enumerate}
-\textbf{Total \$ awards, your share, and FY \fy{} expenditures}
+\textbf{Total \$ awards, your share, and FY \fy{} expenditures}: 1.2M, 400K
 
 
-\subsubsection{Newly Awarded Research Grants (FY \fy{})}
+\subsubsection{Other Active Research Grants  (FY \fy{})}
 \begin{enumerate}
-\item 1
-\item 2
+  \mygrant{nsf2020kbuild}
 \end{enumerate}
 \textbf{Total \$ awards, your share, and FY \fy{} expenditures}
 
@@ -574,13 +625,24 @@ Q2, and/or Q3 in Section~\ref{sec:covid} above.
 \item
   A statement of what you feel were your \textbf{major accomplishments}
   in the \fy{} fiscal year.
+
+  I moved to GMU in Fall 2021. For funding, I received my largest funding so far from NSF (July 2021, 1.2M, 400K my share as PI). For mentoring, I graduated my first Ph.D. student (Guolong at UNL in May 2022) and was able to recruit a top student from VN to GMU (Hai Duong, who came to GMU in Summer'22). For research, I've started a new research direction on formal analysis (verification and property inference) of AI (e.g., Deep Neural Networks). This new line of work gives me ideas to submit a CAREER proposal (Summer'22) and various other proposals in FY 2023. It also opens collaboration opportunities with faculty at GMU.
+  
 \item
   A personal reflection on how well you accomplished your stated goals
   that you submitted last year for the \fy{} fiscal year, and
+
+  I just moved to GMU so did not do this document last year. Though, I have achieved my biggest interest and goal set in the last several years which is jumping into the SE4AI area (and also being able to recruit students to work on it as well as generating research ideas for papers and proposals).
+
 \item
   A personal statement of your objectives for the coming year. Be as
   specific as you can and avoid putting down general statements such as
   ``To get more funding and to write more papers.''
+
+  I am very excited about my new research direction on AI reasoning as I believe my background in verification and property inference SE and PL can significantly improve the state of the art in formal reasoning of AI.  My objectives are to recruit at least 1 more strong student to work on this topic, obtain additional funding, especially from the industry such as Amazon AWS and Google, to support my work in this area, publish my first papers on the AI verification topic in the top conferences of that field including PLDI and CAV. I also aim to create productive collaborations with my new colleague at GMU (e.g., Mingrui and Linshan who have expressed great interests in AI verification).
+
+  I also apply for tenure in Spring'23 and one of my goals to achieve that is to expand my professional networks, especially establishing relationships with researches doing AI verification (e.g., to find strong and relevant reference letters).
+  
 \end{enumerate}
 
 You may also use this part of your Annual Report to make any additional
